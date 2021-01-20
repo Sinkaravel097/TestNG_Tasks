@@ -9,44 +9,44 @@ public class Question12 extends Base {
 	
 	public static Question3Pojo q3;
 	
-	@BeforeClass
+	@BeforeClass(groups="smoke")
 	private void launchBrowser() {
 		chrome();
 	}
 	
-	@Test
+	@Test(groups="smoke")
 	private void tc1() {
 		launchUrl("https://demoqa.com/automation-practice-form/");
 		maxWindow();
 		implicitTime();
 	}
 	
-	@Test
+	@Test(groups="smoke")
 	private void tc2() {
 		q3 = new Question3Pojo();
 		findEle(q3.getFirstname(), "Vishal");
 	}
 	
-	@Test
+	@Test(groups="smoke")
 	private void tc3() {
 		q3 = new Question3Pojo();
 		findEle(q3.getLastName(), "S");
 	}
 	
-	@Test
+	@Test(groups="sanity")
 	private void tc4() {
 		q3 = new Question3Pojo();
 		findEle(q3.getEmail(), "vishal@gmail.com");
 	}
 
-	@Test
+	@Test(groups="sanity")
 	private void tc5() {
 		q3 = new Question3Pojo();
 		javaClick(q3.getGender());
 		findEle(q3.getNumber(), "0000000000");
 	}
 	
-	@Test
+	@Test(groups="sanity")
 	private void tc6() {
 		q3 = new Question3Pojo();
 		javaSendKeys(q3.getSub(), "12345678");
@@ -56,7 +56,7 @@ public class Question12 extends Base {
 		javaClick(q3.getHobbies());
 	}
 	
-	@Test
+	@Test(groups="regression")
 	private void tc7() {
 		q3 = new Question3Pojo();
 		findEle(q3.getAddress(), "I Dont Know Address");

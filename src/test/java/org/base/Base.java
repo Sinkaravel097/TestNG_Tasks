@@ -677,7 +677,7 @@ public class Base {
 
 	}
 
-	// 43 . JAVA SCRIPT CLICK
+	// 43 . JAVA SCRIPT GET ATTRIBUTE
 	public static Object javaGetAttribute(WebElement element) {
 
 		js = (JavascriptExecutor) driver;
@@ -686,7 +686,7 @@ public class Base {
 
 	}
 
-	// 44 . JAVA SCRIPT CLICK
+	// 44 . JAVA SCRIPT SCROLL UP AND DOWN
 	public static void scrollUpAndDown(WebElement element) {
 
 		js = (JavascriptExecutor) driver;

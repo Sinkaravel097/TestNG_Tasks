@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="sanity"/>
+        <include name="regression"/>
+      </run>
+    </groups>
     <classes>
-      <class name="org.execution.Question15">
+      <class name="org.execution.Question12">
         <methods>
+          <include name="tc5"/>
+          <include name="tc4"/>
+          <include name="tc7"/>
+          <include name="tc6"/>
           <include name="launchBrowser"/>
-          <include name="test" invocation-numbers="0"/>
+          <include name="tc1"/>
+          <include name="tc3"/>
+          <include name="tc2"/>
         </methods>
-      </class> <!-- org.execution.Question15 -->
+      </class> <!-- org.execution.Question12 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

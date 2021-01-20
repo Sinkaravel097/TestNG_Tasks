@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9831" started-at="2021-01-18T10:14:18Z" finished-at="2021-01-18T10:14:28Z">
+  <suite name="Suite" duration-ms="10951" started-at="2021-01-20T14:57:30Z" finished-at="2021-01-20T14:57:41Z">
     <groups>
+      <group name="regression">
+        <method signature="Question12.tc7()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc7" class="org.execution.Question12"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Question12.tc1()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc1" class="org.execution.Question12"/>
+        <method signature="Question12.tc2()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc2" class="org.execution.Question12"/>
+        <method signature="Question12.tc3()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc3" class="org.execution.Question12"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="Question12.tc4()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc4" class="org.execution.Question12"/>
+        <method signature="Question12.tc5()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc5" class="org.execution.Question12"/>
+        <method signature="Question12.tc6()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc6" class="org.execution.Question12"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="9831" started-at="2021-01-18T10:14:18Z" finished-at="2021-01-18T10:14:28Z">
-      <class name="org.execution.Question15">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:org.execution.Question15@1bce4f0a]" name="launchBrowser" is-config="true" duration-ms="3994" started-at="2021-01-18T10:14:18Z" finished-at="2021-01-18T10:14:22Z">
+    <test name="Test" duration-ms="10951" started-at="2021-01-20T14:57:30Z" finished-at="2021-01-20T14:57:41Z">
+      <class name="org.execution.Question12">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:org.execution.Question12@5e3a8624]" name="launchBrowser" is-config="true" duration-ms="4096" started-at="2021-01-20T14:57:30Z" finished-at="2021-01-20T14:57:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="test(java.lang.String, java.lang.String)[pri:0, instance:org.execution.Question15@1bce4f0a]" name="test" duration-ms="5806" started-at="2021-01-18T10:14:22Z" data-provider="Authentication" finished-at="2021-01-18T10:14:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vishal30071997@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[vishal]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="tc1()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc1" duration-ms="5698" started-at="2021-01-20T14:57:34Z" finished-at="2021-01-20T14:57:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- org.execution.Question15 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tc1 -->
+        <test-method status="PASS" signature="tc2()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc2" duration-ms="236" started-at="2021-01-20T14:57:40Z" finished-at="2021-01-20T14:57:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc2 -->
+        <test-method status="PASS" signature="tc3()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc3" duration-ms="112" started-at="2021-01-20T14:57:40Z" finished-at="2021-01-20T14:57:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc3 -->
+        <test-method status="PASS" signature="tc4()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc4" duration-ms="137" started-at="2021-01-20T14:57:40Z" finished-at="2021-01-20T14:57:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc4 -->
+        <test-method status="PASS" signature="tc5()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc5" duration-ms="189" started-at="2021-01-20T14:57:40Z" finished-at="2021-01-20T14:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc5 -->
+        <test-method status="PASS" signature="tc6()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc6" duration-ms="172" started-at="2021-01-20T14:57:41Z" finished-at="2021-01-20T14:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc6 -->
+        <test-method status="PASS" signature="tc7()[pri:0, instance:org.execution.Question12@5e3a8624]" name="tc7" duration-ms="275" started-at="2021-01-20T14:57:41Z" finished-at="2021-01-20T14:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc7 -->
+      </class> <!-- org.execution.Question12 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
