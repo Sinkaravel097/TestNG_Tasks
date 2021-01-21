@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-
 <suite name="Suite">
 
-	<parameter name="username" value="vishal30071997@gmail.com"></parameter>
-	<parameter name="password" value="Vishal"></parameter>
+	<listeners>
+		<listener class-name="org.retry.FailedAll"></listener>
+	</listeners>
 
 	<test name="Test">
 		<classes>
-			<class name="org.execution.Question14" />
+			<class name="org.retry.Question101" />
 		</classes>
 	</test> <!-- Test -->
 

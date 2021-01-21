@@ -719,7 +719,7 @@ public class Base {
 // ======================================================= IS ENABLE ==================================================================
 
 	// 47 . IS ENABLE
-	public static boolean isClick(WebElement element) {
+	public static boolean isEnable(WebElement element) {
 
 		boolean enabled = element.isEnabled();
 		return enabled;

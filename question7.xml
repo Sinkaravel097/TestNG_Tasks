@@ -4,12 +4,12 @@
 
 <suite name="Suite" parallel="tests">
 
-	<test name="ChromeTest" >
-		<parameter name="browser" value="chromebrowser"></parameter>
-		<classes>
-			<class name="org.execution.Question7" />
-		</classes>
-	</test>
+	<test name="ChromeTest">
+	<parameter name="browser" value="chromebrowser"></parameter>
+	<classes>
+		<class name="org.execution.Question7" />
+	</classes>
+</test>
 
 	<test name="FirefoxTest">
 		<parameter name="browser" value="firefoxbrowser"></parameter>
@@ -18,7 +18,7 @@
 		</classes>
 	</test>
 
-	<test name="EdgeTest" >
+	<test name="EdgeTest">
 		<parameter name="browser" value="edgebrowser"></parameter>
 		<classes>
 			<class name="org.execution.Question7" />

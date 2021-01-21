@@ -5,10 +5,6 @@ import org.pojo.classes.Question4Pojo;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import com.beust.jcommander.Parameter;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class Question7 extends Base {
 	
 	@Parameters("browser")
